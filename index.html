@@ -12,6 +12,11 @@
     <!-- Navigation Sidebar -->
     <nav class="sidebar">
         <div class="nav-item">
+            <a href="#about" title="About">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+        <div class="nav-item">
             <a href="#work" title="Work">
                 <i class="fas fa-briefcase"></i>
             </a>
@@ -22,25 +27,41 @@
             </a>
         </div>
         <div class="nav-item">
-            <a href="#about" title="About">
-                <i class="fas fa-user"></i>
+            <a href="#certifications" title="Certifications">
+                <i class="fas fa-certificate"></i>
             </a>
         </div>
         <div class="nav-item">
             <a href="#contact" title="Contact">
-                <i class="fas fa-phone"></i>
+                <i class="fas fa-envelope"></i>
             </a>
         </div>
     </nav>
 
     <!-- Main Content -->
     <main class="container">
-        <!-- Hero Section -->
+        <!-- Hero Section with Contact -->
         <section class="hero" id="home">
             <div class="hero-content">
                 <p class="greeting">Hello, I am</p>
                 <h1 class="name">Prathmesh Atkale</h1>
-                <p class="title">I am a AI & Data Science Student | Robotics & ROS2 Developer</p>
+                <p class="title">AI & Data Science Student | Robotics & ROS2 Developer</p>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <a href="mailto:atkaleprathmesh@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>atkaleprathmesh@gmail.com</span>
+                    </a>
+                    <a href="tel:+919699461215" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9699461215</span>
+                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Pune, Maharashtra</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -67,12 +88,12 @@
                         </p>
                         <p>
                             At <strong>e-Yantra, IIT Bombay</strong>, I gained hands-on experience integrating complex robotic systems, 
-                            working with manipulators and autonomous mobile robots. Currently, I'm contributing to <strong>GSoC 2026</strong> 
-                            with Open Robotics, focusing on improving navigation algorithms.
+                            working with manipulators and autonomous mobile robots. Currently, I'm targeting <strong>GSoC 2026</strong> 
+                            in the robotics field, focusing on improving navigation and motion planning algorithms.
                         </p>
                         <p>
                             <strong>Technical Interests:</strong> ROS2, Nav2, MoveIt2, Gazebo, Autonomous Navigation, SLAM, 
-                            Path Planning, Motion Planning, Machine Learning, Deep Learning, Computer Vision, Agricultural Robotics, IoT
+                            Path Planning, Motion Planning, Trajectory Optimization, Machine Learning, Computer Vision, Agricultural Robotics
                         </p>
                         <a href="assets/resume/Prathmesh_Atkale_Resume.pdf" class="resume-btn" target="_blank" download>Resume</a>
                     </div>
@@ -80,43 +101,321 @@
             </div>
         </section>
 
-        <!-- Work & Recent News Section -->
-        <section class="news" id="work">
-            <h2 class="section-title news-title">— Recent news ↑</h2>
-            <div class="news-list">
-                <div class="news-item">
-                    <span class="news-date">2026</span>
-                    <span class="news-content">
-                        Active Open Source contributor for <strong>GSoC 2026</strong> (Open Robotics/Nav2) - Currently contributing to navigation stack improvements and path planning algorithms.
-                    </span>
+        <!-- Work Experience Section -->
+        <section class="work-experience" id="work">
+            <h2 class="section-title">Work Experience</h2>
+            
+            <div class="work-item highlight-work">
+                <div class="work-header">
+                    <div>
+                        <h3 class="work-title">Robotics Intern</h3>
+                        <p class="work-company">e-Yantra, IIT Bombay</p>
+                    </div>
+                    <span class="work-date">2025</span>
+                </div>
+                <div class="work-description">
+                    <p>Worked on advanced robotic systems integrating ROS2, MoveIt2, and Nav2 for autonomous manipulation and navigation.</p>
+                    
+                    <div class="work-projects">
+                        <div class="sub-project">
+                            <h4><i class="fas fa-robot"></i> 5-DOF Manipulator Integration</h4>
+                            <ul>
+                                <li>Integrated custom <strong>5-DOF manipulator</strong> with <strong>MoveIt2</strong> for complex pick-and-place operations</li>
+                                <li>Implemented <strong>inverse kinematics</strong> and <strong>collision-aware trajectory planning</strong></li>
+                                <li>Developed custom motion planning algorithms for optimized path execution</li>
+                                <li>Created simulation environment in Gazebo for testing and validation</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sub-project">
+                            <h4><i class="fas fa-satellite-dish"></i> Autonomous Rover with Sensor Fusion</h4>
+                            <ul>
+                                <li>Interfaced <strong>ROS2</strong> with custom rover platform for full <strong>Nav2 stack</strong> implementation</li>
+                                <li>Developed <strong>sensor fusion pipeline</strong> integrating multiple sensor modalities for robust navigation</li>
+                                <li>Implemented <strong>WebSocket communication layer</strong> for ROS2 integration with custom hardware boards</li>
+                                <li>Enabled autonomous traversal with obstacle avoidance and dynamic path replanning</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-tag">ROS2</span>
+                        <span class="tech-tag">MoveIt2</span>
+                        <span class="tech-tag">Nav2</span>
+                        <span class="tech-tag">Gazebo</span>
+                        <span class="tech-tag">WebSocket</span>
+                        <span class="tech-tag">Sensor Fusion</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">C++</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements" id="achievements">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievement-list">
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>All India Rank 5 (AIR-5)</h3>
+                        <p class="achievement-event">e-Yantra Robotics Competition (e-YRC) 2025</p>
+                        <p class="achievement-desc">Logistic Cobot theme - Led technical development for autonomous logistics challenges, competing against 500+ teams nationwide</p>
+                    </div>
+                    <span class="achievement-year">2025</span>
+                </div>
+                
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>GSoC 2026 Contributor (Target)</h3>
+                        <p class="achievement-event">Open Robotics - Nav2 Navigation Stack</p>
+                        <p class="achievement-desc">Actively contributing to navigation stack improvements and path planning algorithms</p>
+                    </div>
+                    <span class="achievement-year">2026</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- e-YRC Hardware Demo (NEW!) -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <i class="fas fa-robot project-icon"></i>
+                        <h3>e-YRC Hardware - Navigation & Docking</h3>
+                    </div>
+                    
+                    <!-- Google Drive Video Embed -->
+                    <div class="video-embed">
+                        <iframe src="https://drive.google.com/file/d/1-nmUYorPpQwVvpNq4Os10TulwxCU08yj/preview" 
+                                allow="autoplay" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    
+                    <p class="project-description">
+                        Real hardware demonstration of autonomous navigation and precision docking. 
+                        The e-bot successfully navigates through the warehouse environment and executes accurate docking maneuvers using sensor fusion and ROS2 Nav2 stack.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">ROS2</span>
+                        <span class="tech-tag">Nav2</span>
+                        <span class="tech-tag">Hardware Integration</span>
+                        <span class="tech-tag">Sensor Fusion</span>
+                        <span class="tech-tag">Autonomous Docking</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/himaj47/e-yantra-Logistic-CoBot-team-id-1226-" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <span class="project-badge air-5">🏆 AIR-5</span>
+                    </div>
                 </div>
 
-                <div class="news-item">
-                    <span class="news-date">2026</span>
-                    <span class="news-content">
-                        Developing <strong>"Onionator"</strong> - An agricultural tool to help sowing of crops like onion, tomato, and sugarcane. 
-                        Engineering a solution at &lt;30% market cost to reduce farmer's physical strain and improve efficiency.
-                    </span>
+                <!-- e-YRC Simulator Demo -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <i class="fas fa-boxes project-icon"></i>
+                        <h3>e-YRC Logistic CoBot - Simulator</h3>
+                    </div>
+                    
+                    <!-- Google Drive Video Embed -->
+                    <div class="video-embed">
+                        <iframe src="https://drive.google.com/file/d/1prMpFVgyEO1OJY2cvoYbTTbROOrVF_Lv/preview" 
+                                allow="autoplay" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    
+                    <p class="project-description">
+                        Final simulation run showcasing autonomous logistics robot for warehouse automation using ROS2, Nav2, and MoveIt2. 
+                        Achieved AIR-5 competing against 500+ teams with advanced path planning and manipulation capabilities.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">ROS2</span>
+                        <span class="tech-tag">Nav2</span>
+                        <span class="tech-tag">MoveIt2</span>
+                        <span class="tech-tag">Gazebo</span>
+                        <span class="tech-tag">OpenCV</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/himaj47/e-yantra-Logistic-CoBot-team-id-1226-" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <span class="project-badge air-5">🏆 AIR-5</span>
+                    </div>
                 </div>
 
-                <div class="news-item highlight-item">
-                    <span class="news-date">2025</span>
-                    <span class="news-content">
-                        <strong>Intern at e-Yantra, IIT Bombay</strong> - Worked on advanced robotics systems:
-                        <ul>
-                            <li>Integrated <strong>MoveIt2</strong> with a 5-DOF manipulator for complex pick-and-place tasks, implementing inverse kinematics and collision-aware trajectory planning.</li>
-                            <li>Interfaced <strong>ROS2</strong> with a custom rover platform for full <strong>Nav2</strong> stack implementation, enabling autonomous traversal with obstacle avoidance and path planning.</li>
-                            <li>Developed simulation environments in <strong>Gazebo</strong> for testing and validation of autonomous behaviors.</li>
-                        </ul>
-                    </span>
+                <!-- Swarm Drone Demo -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <i class="fas fa-helicopter project-icon"></i>
+                        <h3>Aerial Drone Swarm Control</h3>
+                    </div>
+                    
+                    <!-- Google Drive Video Embed -->
+                    <div class="video-embed">
+                        <iframe src="https://drive.google.com/file/d/1xau0zU7N1dXbDCuWHEhzBnWvXqv5BLZv/preview" 
+                                allow="autoplay" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    
+                    <p class="project-description">
+                        Master-slave drone control system for coordinated aerial operations. 
+                        Implements swarm intelligence algorithms for synchronized flight patterns and collaborative task execution in Gazebo simulation.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">ROS2</span>
+                        <span class="tech-tag">Gazebo</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Swarm Control</span>
+                        <span class="tech-tag">PX4</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Prathmesh2931/swarm_demo" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
                 </div>
 
-                <div class="news-item">
-                    <span class="news-date">2025</span>
-                    <span class="news-content">
-                        Achieved <strong>All India Rank 5 (AIR-5)</strong> in <strong>e-YRC</strong> (Logistic Cobot theme). 
-                        Led technical development for autonomous logistics challenges, competing against 500+ teams nationwide.
-                    </span>
+                <!-- Voice-Guided Tracker -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-microphone project-icon"></i>
+                        <h3>Voice-Guided Multimodal Tracker</h3>
+                    </div>
+                    <p class="project-description">
+                        Intelligent robot that follows objects based on voice commands. 
+                        Integrates speech recognition, computer vision, and autonomous navigation for multimodal interaction.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">ROS2</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">YOLO</span>
+                        <span class="tech-tag">Speech Recognition</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Prathmesh2931/voice-guided-multimodal-tracker" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Onionator -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-seedling project-icon"></i>
+                        <h3>Onionator - Agricultural Tool</h3>
+                    </div>
+                    <p class="project-description">
+                        Low-cost agricultural sowing tool for crops like onion, tomato, and sugarcane. 
+                        Reduces farmer's physical strain and provides efficient sowing at &lt;30% of market alternatives.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Mechanical Design</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Agriculture Tech</span>
+                        <span class="tech-tag">Cost Optimization</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-link development">
+                            <i class="fas fa-tools"></i> In Development
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications" id="certifications">
+            <h2 class="section-title">Certifications & Coursework</h2>
+            <div class="cert-grid">
+                
+                <div class="cert-card verified">
+                    <div class="cert-header">
+                        <i class="fas fa-check-circle cert-icon"></i>
+                        <span class="cert-status">Verified</span>
+                    </div>
+                    <h3 class="cert-title">Supervised Machine Learning</h3>
+                    <p class="cert-provider">Coursera | Stanford University</p>
+                    <p class="cert-description">Regression, Classification, and Neural Networks</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/BJ0ASW93PG67" 
+                       target="_blank" 
+                       class="cert-link">
+                        <i class="fas fa-external-link-alt"></i> View Certificate
+                    </a>
+                </div>
+
+                <div class="cert-card in-progress">
+                    <div class="cert-header">
+                        <i class="fas fa-spinner cert-icon"></i>
+                        <span class="cert-status">In Progress</span>
+                    </div>
+                    <h3 class="cert-title">Modern Robotics, Course 1</h3>
+                    <p class="cert-provider">Coursera | Northwestern University</p>
+                    <p class="cert-description">Foundations of Robot Motion - Kinematics and Dynamics</p>
+                </div>
+
+                <div class="cert-card learning">
+                    <div class="cert-header">
+                        <i class="fas fa-book-open cert-icon"></i>
+                        <span class="cert-status">Learning</span>
+                    </div>
+                    <h3 class="cert-title">Nonlinear Programming</h3>
+                    <p class="cert-provider">Self-Study</p>
+                    <p class="cert-description">Trajectory optimization and motion planning applications</p>
+                </div>
+
+                <div class="cert-card learning">
+                    <div class="cert-header">
+                        <i class="fas fa-database cert-icon"></i>
+                        <span class="cert-status">Learning</span>
+                    </div>
+                    <h3 class="cert-title">Data Collection Techniques</h3>
+                    <p class="cert-provider">Self-Study</p>
+                    <p class="cert-description">Sensor data acquisition and preprocessing for robotics</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-description">
+                I'm currently seeking opportunities in robotics, ROS2 development, and AI/ML. 
+                Feel free to reach out for collaborations, internships, or just to connect!
+            </p>
+            
+            <div class="contact-methods">
+                <a href="mailto:atkaleprathmesh@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>atkaleprathmesh@gmail.com</p>
+                </a>
+                
+                <a href="tel:+919699461215" class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+91 9699461215</p>
+                </a>
+                
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Pune, Maharashtra, India</p>
                 </div>
             </div>
         </section>
@@ -129,8 +428,9 @@
             <a href="https://github.com/Prathmesh2931" target="_blank" rel="noopener noreferrer" title="GitHub">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/prathmesh_atkale/" target="_blank" rel="noopener noreferrer" title="Instagram">
-                <i class="fab fa-instagram"></i>
+        
+            <a href="mailto:atkaleprathmesh@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
             </a>
         </div>
     </main>

@@ -52,15 +52,15 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe news items
-document.querySelectorAll('.news-item').forEach(item => {
-    item.style.opacity = '0';
-    item.style.transform = 'translateY(20px)';
-    item.style.transition = 'all 0.6s ease';
-    observer.observe(item);
+// Observe project cards for animation
+document.querySelectorAll('.project-card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'all 0.6s ease';
+    observer.observe(card);
 });
 
-// Typing effect for greeting (optional enhancement)
+// Typing effect for greeting
 const greeting = document.querySelector('.greeting');
 if (greeting) {
     const text = greeting.textContent;
