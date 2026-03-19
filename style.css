@@ -280,6 +280,129 @@ body::before {
     box-shadow: 0 5px 20px rgba(100, 255, 218, 0.3);
 }
 
+/* ============================================
+   OPEN SOURCE CONTRIBUTIONS SECTION
+   ============================================ */
+
+.contributions {
+  padding: 80px 0;
+  max-width: 1400px;
+  border-top: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.contributions-container {
+  max-width: 1400px;
+}
+
+.section-intro {
+  color: var(--text-secondary);
+  max-width: 900px;
+  line-height: 1.8;
+  margin: 0 0 30px 0;
+}
+
+.contributions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.contribution-card {
+  background-color: rgba(17, 34, 64, 0.4);
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  transition: all 0.3s ease;
+  
+  /* NEW: Flex column + full height */
+  display: flex;
+  flex-direction: column;
+  height: 100%;               /* Makes cards stretch to match tallest in row */
+}
+
+.contribution-card:hover {
+  background-color: rgba(17, 34, 64, 0.6);
+  border-color: var(--accent-color);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(100, 255, 218, 0.18);
+}
+
+.contribution-card.highlight {
+  border: 1px solid rgba(100, 255, 218, 0.25);
+  box-shadow: 0 0 18px rgba(100, 255, 218, 0.10);
+}
+
+.contribution-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.contribution-top h3 {
+  color: var(--text-primary);
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.contrib-meta {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.contrib-points {
+  margin: 0 0 18px 0;
+  padding-left: 18px;
+  color: var(--text-secondary);
+  
+  /* Optional: let it grow but not push links too far */
+  flex-grow: 1;
+  margin-bottom: 0;           /* Remove bottom margin so links hug closer */
+}
+
+.contrib-points li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.contrib-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  
+  /* NEW: Push to bottom */
+  margin-top: auto;           /* This is the magic — pushes to bottom when card is flex */
+  padding-top: 16px;          /* Optional: adds consistent spacing above the link */
+}
+
+.contrib-badge {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contrib-badge.merged {
+  background: rgba(35, 134, 54, 0.18);
+  color: #7ee787;
+  border-color: rgba(35, 134, 54, 0.35);
+}
+
+.contrib-badge.in-progress {
+  background: rgba(255, 165, 0, 0.16);
+  color: #ffcc80;
+  border-color: rgba(255, 165, 0, 0.35);
+}
+
+.contrib-badge.learning {
+  background: rgba(100, 149, 237, 0.16);
+  color: #9bbcff;
+  border-color: rgba(100, 149, 237, 0.35);
+}
 
 /* ============================================
    WORK EXPERIENCE SECTION

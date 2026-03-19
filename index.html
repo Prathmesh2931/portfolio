@@ -101,6 +101,58 @@
             </div>
         </section>
 
+       <section class="contributions" id="contributions">
+            <div class="contributions-container">
+                <h2 class="section-title">Open Source Contributions</h2>
+                <p class="section-intro">
+                    Targeting <strong>GSoC 2026 with Open Robotics</strong>.  
+                    Active contributor to the ROS 2 & Navigation2 ecosystem — focusing on lifecycle reliability, developer tooling, and Gazebo simulation bridging.
+                </p>
+
+                <div class="contributions-grid">
+                    <!-- Card 1: Lifecycle Service Wrappers -->
+                    <div class="contribution-card highlight">
+                        <div class="contribution-top">
+                            <h3>Navigation2 – Lifecycle-Aware Service Wrappers</h3>
+                            <span class="contrib-badge in-progress">In Progress</span>
+                        </div>
+                        <p class="contrib-meta">Upstream: ros-navigation/navigation2</p>
+                        <ul class="contrib-points">
+                            <li>Implemented <code>nav2::ServiceServer<T></code> wrapper + factory using <code>SimpleManagedEntity</code> to enforce lifecycle discipline.</li>
+                            <li>Migrated <strong>26 production services</strong> (AMCL, costmap_2d, planner_server, route_server, map_server, opennav_docking, etc.).</li>
+                            <li>Prevents "Service called while not activated" errors (#5298) with real-time <code>is_activated()</code> checks.</li>
+                            <li>~98% test coverage; under review with maintainers (ordered activation discussions).</li>
+                        </ul>
+                        <div class="contrib-links">
+                            <a class="project-link" href="https://github.com/ros-navigation/navigation2/pull/5893" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View PR #5893
+                            </a>
+                        </div>
+                    </div>
+
+                   <!-- Card 2: RouteTool Backport -->
+                    <div class="contribution-card">
+                        <div class="contribution-top">
+                            <h3>RouteTool RViz Plugin – Backport to Jazzy</h3>
+                            <span class="contrib-badge merged">Merged</span>
+                        </div>
+                        <p class="contrib-meta">Upstream: ros-navigation/navigation2</p>
+                        <ul class="contrib-points">
+                            <li>Backported experimental RouteTool (interactive route graph editor: node/edge creation, MarkerArray viz, GeoJSON load/save).</li>
+                            <li>Fixed linting/CI (EOF newlines, DCO), ensured Jazzy compatibility (CMake/plugin registration).</li>
+                            <li>Tested end-to-end functionality in Jazzy distribution.</li>
+                            <li>Merged into Jazzy.</li>
+                        </ul>
+                        <div class="contrib-links">
+                            <a class="project-link" href="https://github.com/ros-navigation/navigation2/issues/5663" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> View Issue #5663 (PR linked & merged)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Work Experience Section -->
         <section class="work-experience" id="work">
             <h2 class="section-title">Work Experience</h2>
