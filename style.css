@@ -887,6 +887,25 @@ body::before {
     transform: translateX(5px);
 }
 
+.learning-resources {
+    margin: 12px 0 0 0;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.learning-resources li {
+    margin-bottom: 8px;
+}
+
+.learning-resources a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.learning-resources a:hover {
+    text-decoration: underline;
+}
 
 /* ============================================
    CONTACT SECTION
