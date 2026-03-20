@@ -120,7 +120,7 @@
                         <ul class="contrib-points">
                             <li>Implemented <code>nav2::ServiceServer<T></code> wrapper + factory using <code>SimpleManagedEntity</code> to enforce lifecycle discipline.</li>
                             <li>Migrated <strong>26 production services</strong> (AMCL, costmap_2d, planner_server, route_server, map_server, opennav_docking, etc.).</li>
-                            <li>Prevents "Service called while not activated" errors (#5298) with real-time <code>is_activated()</code> checks.</li>
+                            <li>Addresses lifecycle inconsistencies (e.g., service calls in inactive states) by introducing runtime activation guards; currently under active maintainer review.</li>
                             <li>~98% test coverage; under review with maintainers (ordered activation discussions).</li>
                         </ul>
                         <div class="contrib-links">
@@ -139,7 +139,7 @@
                         <p class="contrib-meta">Upstream: ros-navigation/navigation2</p>
                         <ul class="contrib-points">
                             <li>Backported experimental RouteTool (interactive route graph editor: node/edge creation, MarkerArray viz, GeoJSON load/save).</li>
-                            <li>Fixed linting/CI (EOF newlines, DCO), ensured Jazzy compatibility (CMake/plugin registration).</li>
+                            <li>Resolved build, linting, and CI issues; ensured full compatibility with the Jazzy distribution and compliance with project contribution standards (DCO).</li>
                             <li>Tested end-to-end functionality in Jazzy distribution.</li>
                             <li>Merged into Jazzy.</li>
                         </ul>
