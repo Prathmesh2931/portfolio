@@ -548,6 +548,22 @@ body::before {
 /* ============================================
    ACHIEVEMENTS SECTION
    ============================================ */
+.achievement-item.featured {
+  border: 1px solid rgba(100, 255, 218, 0.25);
+  box-shadow: 0 0 16px rgba(100, 255, 218, 0.10);
+}
+
+.achievement-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.achievement-link:hover {
+  text-decoration: underline;
+}
 
 .achievements {
     padding: 80px 0;
